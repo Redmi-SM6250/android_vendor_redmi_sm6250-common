@@ -18,7 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/redmi/curtana
 
 PRODUCT_COPY_FILES += \
-    vendor/redmi/curtana/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/redmi/curtana/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/redmi/curtana/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/redmi/curtana/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
@@ -66,4 +65,5 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    chargeonlymode
